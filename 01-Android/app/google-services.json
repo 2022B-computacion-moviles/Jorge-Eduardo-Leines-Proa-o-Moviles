@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "340994538327",
+    "project_id": "movcomp-jelp",
+    "storage_bucket": "movcomp-jelp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340994538327:android:3a7178255e4dee29c9dc12",
+        "android_client_info": {
+          "package_name": "com.example.movcompjelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340994538327-p7ridfc0f6c42103d2j71dq19e4tflo7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfSUwkBGeswaHS2r_tDhb8pOfPu1Zlmlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340994538327-p7ridfc0f6c42103d2j71dq19e4tflo7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
