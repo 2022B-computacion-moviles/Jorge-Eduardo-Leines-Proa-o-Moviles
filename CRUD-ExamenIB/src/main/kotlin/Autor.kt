@@ -20,5 +20,4 @@ class Autor {
     override fun toString(): String {
         return "$nombre, edad=$edad, valoracion=$valoracion, fechanacimiento=$fechanacimiento, retirado=$retirado"
     }
-
 }

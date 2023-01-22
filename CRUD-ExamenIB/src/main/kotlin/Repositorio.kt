@@ -2,6 +2,8 @@ import java.io.File
 
 class Repositorio {
     var repositorio: MutableList<AutorYLibros> = mutableListOf()
+    var consola = "consola.txt"
+    var rep = "repositorio.txt"
 
     fun crearRelacion(
         autor: Autor,
@@ -9,13 +11,13 @@ class Repositorio {
     ){
         var lib: String
         repositorio!!.add(AutorYLibros(autor,libros))
-        File("consola.txt").writeText("")
-        File("repositorio.txt").writeText("")
+        File(consola).writeText("")
+        File(rep).writeText("")
         for(i in 0 until repositorio.size){
-            File("consola.txt").appendText("Id: " + i.toString() + "\t" +
+            File(consola).appendText("Id: " + i.toString() + "\t" +
                     "Autor: " + repositorio.get(i).autor +
                     "\n\t\tLibros: " + "`id:0(...),1(...),...`-> "+repositorio.get(i).libros+"\n")
-            File("repositorio.txt").appendText(i.toString()+ "\t" + repositorio.get(i).toString() + "\n")
+            File(rep).appendText(i.toString()+ "\t" + repositorio.get(i).toString() + "\n")
         }
     }
 
@@ -24,18 +26,18 @@ class Repositorio {
         libro: Libro
     ) {
         repositorio.get(idAutor).libros.add(libro)
-        File("consola.txt").writeText("")
-        File("repositorio.txt").writeText("")
+        File(consola).writeText("")
+        File(rep).writeText("")
         for(i in 0 until repositorio.size){
-            File("consola.txt").appendText("Id: " + i.toString() + "\t" +
+            File(consola).appendText("Id: " + i.toString() + "\t" +
                     "Autor: " + repositorio.get(i).autor +
                     "\n\t\tLibros: " + "`id:0(...),1(...),...`-> "+repositorio.get(i).libros+"\n")
-            File("repositorio.txt").appendText(i.toString()+ "\t" + repositorio.get(i).toString() + "\n")
+            File(rep).appendText(i.toString()+ "\t" + repositorio.get(i).toString() + "\n")
         }
     }
 
     fun obtenerTodoRepositorio (): String {
-        return File("consola.txt").readText()
+        return File(consola).readText()
     }
 
     fun encontrarPorId(id: Int): String? {
@@ -52,39 +54,39 @@ class Repositorio {
 
     fun borrarPorIdAutor(id: Int): String?{
         repositorio.removeAt(id)
-        File("consola.txt").writeText("")
-        File("repositorio.txt").writeText("")
+        File(consola).writeText("")
+        File(rep).writeText("")
         for(i in 0 until repositorio.size){
-            File("consola.txt").appendText("Id: " + i.toString() + "\t" +
+            File(consola).appendText("Id: " + i.toString() + "\t" +
                     "Autor: " + repositorio.get(i).autor +
                     "\n\t\tLibros: " + "`id:0(...),1(...),...`-> "+repositorio.get(i).libros+"\n")
-            File("repositorio.txt").appendText(i.toString()+ "\t" + repositorio.get(i).toString() + "\n")
+            File(rep).appendText(i.toString()+ "\t" + repositorio.get(i).toString() + "\n")
         }
         return "Se ha eliminado y actualizado la base de datos: \n"+ File("consola.txt").readText()
     }
 
     fun borrarPorIdAutorLibros(idAutor: Int, idLibro: Int): String? {
         repositorio.get(idAutor).libros.removeAt(idLibro)
-        File("consola.txt").writeText("")
-        File("repositorio.txt").writeText("")
+        File(consola).writeText("")
+        File(rep).writeText("")
         for(i in 0 until repositorio.size){
-            File("consola.txt").appendText("Id: " + i.toString() + "\t" +
+            File(consola).appendText("Id: " + i.toString() + "\t" +
                     "Autor: " + repositorio.get(i).autor +
                     "\n\t\tLibros: " + "`id:0(...),1(...),...`-> "+repositorio.get(i).libros+"\n")
-            File("repositorio.txt").appendText(i.toString()+ "\t" + repositorio.get(i).toString() + "\n")
+            File(rep).appendText(i.toString()+ "\t" + repositorio.get(i).toString() + "\n")
         }
         return "Se ha eliminado y actualizado la base de datos: \n"+ File("consola.txt").readText()
     }
 
     fun actualizarLibrosAutor(idAutor: Int, idLibro: Int,libro: Libro): String {
         repositorio.get(idAutor).libros.set(idLibro, libro)
-        File("consola.txt").writeText("")
-        File("repositorio.txt").writeText("")
+        File(consola).writeText("")
+        File(rep).writeText("")
         for(i in 0 until repositorio.size){
-            File("consola.txt").appendText("Id: " + i.toString() + "\t" +
+            File(consola).appendText("Id: " + i.toString() + "\t" +
                     "Autor: " + repositorio.get(i).autor +
                     "\n\t\tLibros: " + "`id:0(...),1(...),...`-> "+repositorio.get(i).libros+"\n")
-            File("repositorio.txt").appendText(i.toString()+ "\t" + repositorio.get(i).toString() + "\n")
+            File(rep).appendText(i.toString()+ "\t" + repositorio.get(i).toString() + "\n")
         }
         return "Se ha actualizado la base de datos: \n"+ File("consola.txt").readText()
     }
@@ -94,13 +96,13 @@ class Repositorio {
         autor: Autor,
         libros: ArrayList<Libro>): String? {
         repositorio.set(id, AutorYLibros(autor,libros))
-        File("consola.txt").writeText("")
-        File("repositorio.txt").writeText("")
+        File(consola).writeText("")
+        File(rep).writeText("")
         for(i in 0 until repositorio.size){
-            File("consola.txt").appendText("Id: " + i.toString() + "\t" +
+            File(consola).appendText("Id: " + i.toString() + "\t" +
                     "Autor: " + repositorio.get(i).autor +
                     "\n\t\tLibros: " + "`id:0(...),1(...),...`-> "+repositorio.get(i).libros+"\n")
-            File("repositorio.txt").appendText(i.toString()+ "\t" + repositorio.get(i).toString() + "\n")
+            File(rep).appendText(i.toString()+ "\t" + repositorio.get(i).toString() + "\n")
         }
         return "Se actualizo el dato de id: "+ id + "\n"+ File("consola.txt").readText()
     }

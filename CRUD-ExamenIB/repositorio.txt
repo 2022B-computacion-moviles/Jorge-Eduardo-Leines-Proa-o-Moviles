@@ -1,1 +1,1 @@
-0	Eduardo, edad=22, valoracion=56.9, fechanacimiento=2000-10-10, retirado=true, [(nombre=Rosa, fechalanzamiento=2015-12-11, id=24, puntuacion=89.8, recomendable=true), (nombre=Fake, fechalanzamiento=2016-09-10, id=24, puntuacion=89.8, recomendable=true)]
+0	Maria, edad=25, valoracion=56.9, fechanacimiento=2001-12-12, retirado=true, [(nombre=Petalo, fechalanzamiento=2016-10-10, id=465, puntuacion=45.0, recomendable=false)]

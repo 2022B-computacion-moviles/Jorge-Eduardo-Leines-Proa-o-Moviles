@@ -106,7 +106,7 @@ class Servicios {
     }
 
     fun borrarALId(id: Int){
-        println("El libro con el id "+ id + " ha sido eliminado")
+        println("El autor con el id "+ id + " ha sido eliminado")
         rep.borrarPorIdAutor(id)
     }
 
@@ -138,7 +138,6 @@ class Servicios {
         }
         libro = Libro(nombre_libro, fecha_salida, id, puntu, recomendado)
         rep.actualizarLibrosAutor(idAutor, idLibro, libro)
-
     }
 
     fun actualizacionCompleta(idAutor: Int){
