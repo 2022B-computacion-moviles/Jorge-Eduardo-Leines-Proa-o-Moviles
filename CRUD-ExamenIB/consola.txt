@@ -1,0 +1,2 @@
+Id: 0	Autor: Eduardo, edad=22, valoracion=56.9, fechanacimiento=2000-10-10, retirado=true
+		Libros: `id:0(...),1(...),...`-> [(nombre=Rosa, fechalanzamiento=2015-12-11, id=24, puntuacion=89.8, recomendable=true), (nombre=Fake, fechalanzamiento=2016-09-10, id=24, puntuacion=89.8, recomendable=true)]
