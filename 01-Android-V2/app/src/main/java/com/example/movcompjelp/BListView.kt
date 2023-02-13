@@ -10,6 +10,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 
 class BListView : AppCompatActivity() {
@@ -52,11 +53,12 @@ class BListView : AppCompatActivity() {
     override fun onContextItemSelected(item: MenuItem): Boolean {
         return when (item.itemId){
             R.id.mi_editar->{
+                Toast.makeText(this,"Selecciono eliminar este item",Toast.LENGTH_SHORT).show()
                 "${idItemSeleccionado}"
                 return true
             }
             R.id.mi_eliminar->{
-                abrirDialogo()
+                Toast.makeText(this,"Selecciono eliminar este item",Toast.LENGTH_SHORT).show()
                 "${idItemSeleccionado}"
                 return true
             }

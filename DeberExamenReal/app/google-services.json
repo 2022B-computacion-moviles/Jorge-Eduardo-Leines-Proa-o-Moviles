@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470602890924",
+    "project_id": "deber-examen-real",
+    "storage_bucket": "deber-examen-real.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470602890924:android:f274dfd1bda13b33862909",
+        "android_client_info": {
+          "package_name": "com.example.deber_examen_real"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470602890924-ulie7hif04qtfqo2slfthhdd1raeippn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcQeM8ayn6OfZU_CuCVzGR26isbZv2nOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470602890924-ulie7hif04qtfqo2slfthhdd1raeippn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
