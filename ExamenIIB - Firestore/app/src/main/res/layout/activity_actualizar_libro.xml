@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crearLibro">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar libro:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="140dp"
+        android:text="ID AUTOR"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/ptxt_nombreLibro2"
+        android:layout_width="256dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Nombre libro:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/ptxt_idLibro2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ptxt_idLibro2"
+        app:layout_constraintTop_toBottomOf="@+id/ptxt_idLibro2" />
+
+    <Switch
+        android:id="@+id/swt_recomendable_act"
+        android:layout_width="245dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="40dp"
+        android:text="Es recomendable"
+        android:textOff="No"
+        android:textOn="Si"
+        app:layout_constraintEnd_toEndOf="@+id/ptxt_puntuacion2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ptxt_puntuacion2"
+        app:layout_constraintTop_toBottomOf="@+id/ptxt_puntuacion2" />
+
+    <EditText
+        android:id="@+id/ptxt_idAutorLibro2"
+        android:layout_width="265dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="idAutor"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/ptxt_idLibro2"
+        android:layout_width="252dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="176dp"
+        android:ems="10"
+        android:hint="idLibro"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/txt_fecha_salida"
+        android:layout_width="255dp"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:hint="Seleccionar fecha salida"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ptxt_nombreLibro2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ptxt_nombreLibro2"
+        app:layout_constraintTop_toBottomOf="@+id/ptxt_nombreLibro2" />
+
+    <EditText
+        android:id="@+id/ptxt_puntuacion2"
+        android:layout_width="249dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Puntuacion"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txt_fecha_salida"
+        app:layout_constraintStart_toStartOf="@+id/txt_fecha_salida"
+        app:layout_constraintTop_toBottomOf="@+id/txt_fecha_salida" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="48dp"
+        android:text="ID LIBRO"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btn_crear_libro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:text="Actualizar libro"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/txt_error4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="error"
+        android:textColor="#880606"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

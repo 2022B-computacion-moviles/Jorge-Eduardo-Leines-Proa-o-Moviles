@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "461216394281",
+    "project_id": "exameniib-firestore",
+    "storage_bucket": "exameniib-firestore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461216394281:android:677ad692067ab765714038",
+        "android_client_info": {
+          "package_name": "com.example.examenIIB_firestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461216394281-v8mkoks2424b0u17fbs9gbglt0nv4gvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX5-wYa6xMBAzk4-cvcOP0UfpYA8tNaDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461216394281-v8mkoks2424b0u17fbs9gbglt0nv4gvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
