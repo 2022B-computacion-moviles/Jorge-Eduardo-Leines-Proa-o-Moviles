@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".detalleImagen">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D2000000">
+
+        <ImageView
+            android:id="@+id/image_detalle"
+            android:layout_width="207dp"
+            android:layout_height="340dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.248"
+            app:srcCompat="@drawable/yato" />
+
+        <TextView
+            android:id="@+id/tv_nombre_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AYATO"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/image_detalle"
+            app:layout_constraintEnd_toEndOf="@+id/image_detalle"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="@+id/image_detalle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.753" />
+
+        <TextView
+            android:id="@+id/tv_detalle_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ayato imagen"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/image_detalle"
+            app:layout_constraintStart_toStartOf="@+id/image_detalle"
+            app:layout_constraintTop_toBottomOf="@+id/image_detalle"
+            app:layout_constraintVertical_bias="0.011" />
+
+        <TextView
+            android:id="@+id/tv_categorias_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="anime"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/image_detalle"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/image_detalle"
+            app:layout_constraintTop_toBottomOf="@+id/image_detalle"
+            app:layout_constraintVertical_bias="0.073" />
+
+        <Button
+            android:id="@+id/btn_buy_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp"
+            android:text="Descargar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/image_detalle"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/image_detalle"
+            app:layout_constraintTop_toBottomOf="@+id/swt_favorito"
+            app:layout_constraintVertical_bias="0.425" />
+
+        <Switch
+            android:id="@+id/swt_favorito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Añadir a favoritos"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@+id/tv_categorias_det"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="@+id/tv_categorias_det"
+            app:layout_constraintTop_toBottomOf="@+id/tv_categorias_det" />
+
+        <Button
+            android:id="@+id/btn_borrar"
+            android:layout_width="99dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:text="Borrar"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/btn_buy_download"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="@+id/btn_buy_download"
+            app:layout_constraintTop_toBottomOf="@+id/btn_buy_download" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

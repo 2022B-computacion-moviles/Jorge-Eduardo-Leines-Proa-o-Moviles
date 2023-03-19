@@ -65,18 +65,6 @@ class librosActividad : AppCompatActivity() {
             .addOnFailureListener {
                 Log.d("ERROR FIRESTORE", "NO SE CONECTO A LA BASE DE DATOS :(")
             }
-//        /////
-//        conn = ConexionSQLiteHelper(this)
-//
-//        listViewLibros = findViewById(R.id.lv_libros)
-//
-//        ListarLibros()
-//
-//        var adaptador = ArrayAdapter(this, android.R.layout.simple_list_item_1, listaInfoLibros!!)
-//        listViewLibros!!.adapter = adaptador
-//        adaptador.notifyDataSetChanged()
-//        registerForContextMenu(listViewLibros)
-//        //////
     }
 
     fun obtenerLista(){

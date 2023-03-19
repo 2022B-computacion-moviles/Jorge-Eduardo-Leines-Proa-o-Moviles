@@ -43,6 +43,7 @@ class amigos : Fragment() {
         llenarLista()
         val amigosAdap = AmigosAdapter(listaAmigos!!)
         recyclerAmigos!!.adapter = amigosAdap
+        amigosAdap.notifyDataSetChanged()
         return vista
     }
 

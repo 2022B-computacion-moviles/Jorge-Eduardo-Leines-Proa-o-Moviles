@@ -40,7 +40,7 @@ class mensajes : Fragment() {
         // Inflate the layout for this fragment
         var vista = inflater.inflate(R.layout.fragment_mensajes, container, false)
         recyclerMensajes = vista.findViewById(R.id.recyclerMensajes)
-        recyclerMensajes!!.layoutManager = LinearLayoutManager(vista.context)
+        recyclerMensajes!!.layoutManager = LinearLayoutManager(this.context)
         llenarLista()
         val mensajesAdap = MensajesAdapter(listamensajes!!)
         recyclerMensajes!!.adapter = mensajesAdap

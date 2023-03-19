@@ -101,19 +101,6 @@ class crearLibro : AppCompatActivity() {
             errorText!!.isVisible = true
             errorText!!.setText("Todos los datos son obligatorios y deben ser llenados correctamente")
         }
-//        var conn = ConexionSQLiteHelper(this)
-//        var db: SQLiteDatabase = conn.writableDatabase
-//        var values = ContentValues()
-//
-//        values.put(SQL.COL_ID_AUTOR_LIBRO,campoidAutorLibros?.text.toString())
-//        values.put(SQL.COL_NOMBRE_LIBRO,camponombreLibro?.text.toString())
-//        values.put(SQL.COL_FECHA_SALIDA,mDisplayDate!!.text.toString())
-//        values.put(SQL.COL_PUNTUACION,campopuntuacion?.text.toString())
-//        values.put(SQL.COL_RECOMENDABLE,camporecomendable)
-//
-//        db.insert(SQL.TABLA_LIBROS, SQL.COL_ID_LIBRO,values)
-//        Toast.makeText(this, "LIBRO CREADO", Toast.LENGTH_SHORT).show()
-//        db.close()
     }
 
     fun popupfecha(){
